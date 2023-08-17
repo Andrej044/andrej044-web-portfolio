@@ -39,7 +39,7 @@ html{
   font-family: SpaceGrotesk, sans-serif;
   font-size: 1.6rem;
   color:var(--white);
-  overflow-x: hidden;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
