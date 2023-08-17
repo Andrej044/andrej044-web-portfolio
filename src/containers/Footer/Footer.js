@@ -1,4 +1,5 @@
 import Navigation from "../Navigation/Navigation";
+import RingsSVG from "../../components/svg/ringsSVG";
 import './Footer.css';
 
 const Footer = () =>{
@@ -9,8 +10,7 @@ const Footer = () =>{
       <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
       <div className="contact-wrapper">
         <span className="decor__rings decor">
-          <svg className="pattern-rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g>
-          </svg>
+          <RingsSVG/>
         </span>
         <form id="myForm">
         <div className="contact-form">
