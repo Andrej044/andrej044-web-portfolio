@@ -1,4 +1,5 @@
 import Navigation from "../Navigation/Navigation";
+import './Footer.css';
 
 const Footer = () =>{
   return(
