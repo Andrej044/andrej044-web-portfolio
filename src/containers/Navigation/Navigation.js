@@ -1,6 +1,6 @@
-import GitHub from "../components/socialMedia/gitHub";
-import FrontEndMentor from "../components/socialMedia/frontEndMentor";
-import LinkedIn from "../components/socialMedia/linkedIn";
+import GitHub from "../../components/socialMedia/gitHub";
+import FrontEndMentor from "../../components/socialMedia/frontEndMentor";
+import LinkedIn from "../../components/socialMedia/linkedIn";
 
 
 const Navigation = ({section}) => {
