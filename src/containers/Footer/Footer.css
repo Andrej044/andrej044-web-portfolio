@@ -1,0 +1,11 @@
+.footer{
+  position: relative;
+  background: var(--dark-gray) ;
+  padding: 6rem 1.6rem;
+}
+
+@media screen and (min-width:1440px) {
+.footer{
+  padding: 8.4rem 16.5rem;
+  }
+}
