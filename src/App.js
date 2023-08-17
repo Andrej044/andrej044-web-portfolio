@@ -1,4 +1,4 @@
-import Header from "./containers/Header";
+import Header from "./containers/Header/Header";
 import Main from "./containers/Main";
 import Footer from "./containers/Footer";
 
