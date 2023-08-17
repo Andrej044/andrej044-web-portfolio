@@ -1,5 +1,5 @@
 
-const ringsSVG = () => {
+const RingsSVG = () => {
   return(
     <svg className="pattern-rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129">
       <g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25">
@@ -14,4 +14,4 @@ const ringsSVG = () => {
 }
 
 
-export default ringsSVG
+export default RingsSVG

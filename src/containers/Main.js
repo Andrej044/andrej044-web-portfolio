@@ -1,3 +1,7 @@
+import Section from "./Section";
+import CircleSVG from "../components/svg/circleSVG";
+import RingsSVG from "../components/svg/ringsSVG";
+
 const Main = () =>{
   return(
     <main className="main">
@@ -5,9 +9,7 @@ const Main = () =>{
     <section className="intro">
       <h2 className="intro__title visually-hidden">Introduce</h2>
       <span className="decor__rings decor">
-        <svg className="pattern-rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g>
-        </svg>
-        
+        <RingsSVG/>
       </span> 
       <div className="intro__text">
         <p>Nice to <br className="intro__text--br-hidden"/> meet you! I'm <span className="text--underline">Andrii Lishchyna</span>.</p>
@@ -19,14 +21,13 @@ const Main = () =>{
         <h3 className="img__title visually-hidden">Profile Photo</h3>
       </div>
       <span className="decor__circle decor">
-        <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129"><circle cx="830.5" cy="585.5" r="64" fill="none" stroke="#FFF" transform="translate(-766 -521)"/></svg>
+        <CircleSVG/>
       </span>
     </section>
     <section className="skills">
       <h2 className="skills__title visually-hidden">Skills</h2>
       <span className="decor__rings decor">
-        <svg className="pattern-rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g>
-        </svg>
+        <RingsSVG/>
       </span>
       <ul className="skills__list">
        <li className="skills__item">
@@ -153,6 +154,10 @@ const Main = () =>{
         </li>
       </ul>
     </section>
+    <Section>
+      <p>Hello</p>
+      <div>fsdg</div>
+    </Section>
   </main>
   )
 }
