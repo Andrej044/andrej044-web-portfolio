@@ -43,3 +43,35 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+ul{
+  list-style: none;
+  display: flex;
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--white);
+}
+input,button{
+  background: none;
+  border: none;
+}
+button{
+  cursor: pointer;
+}
+h2{
+  letter-spacing: -0.25rem;
+}
+h3{
+  letter-spacing: -0.15rem;
+}
+a,button{
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+a:hover, a:active, a:focus, button:hover, button:focus {
+  color:var(--green)
+}
+img{
+  display: block;
+}
