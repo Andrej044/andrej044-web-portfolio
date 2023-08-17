@@ -6,7 +6,7 @@ import './Navigation.css';
 
 const Navigation = ({section}) => {
   return(
-    <nav className={`${section}-nav`}>
+    <nav className={`${section}-nav nav`}>
       <p>andrej044</p>
       <ul className="nav__list">
         <li>
