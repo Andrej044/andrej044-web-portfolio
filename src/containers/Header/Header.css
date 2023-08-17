@@ -1,0 +1,12 @@
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width:1440px) {
+  .header{
+    margin-top: 2.1rem;
+  }
+}
