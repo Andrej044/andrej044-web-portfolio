@@ -1,18 +1,24 @@
 
+import background from '../images/profilePhoto.jpg'
+
 const ProfilePhoto = () => {
 
   const imgStyle = {  
       order: 1,
-      width: '100%',
+      width: '320px',
       height: '367px',
-      background: 'url("../images/profilePhoto.jpg") no-repeat',
-      backgroundPosition: 'center',
-      backgroundSize: 'contain',
-      zIndex: 1
+      backgroundImage: `url(${background})`,
+      backgroundRepeat:'no-repeat',
+      backgroundPosition: 'center 25%',
+      backgroundSize: 'cover',
+      border: '2px solid white',
+      borderRadius: '50%',
+      zIndex: 1,
+      filter: 'grayscale(100%) sepia(41%)'
     }
 
   return(
-    <div className={imgStyle}>
+    <div style={imgStyle}>
       <h3 className="visually-hidden">Profile Photo</h3>
     </div>
   )
