@@ -1,4 +1,5 @@
 import Section from "./Section";
+import ProfilePhoto from "../components/profilePhoto";
 import CircleSVG from "../components/svg/circleSVG";
 import RingsSVG from "../components/svg/ringsSVG";
 
@@ -13,13 +14,10 @@ const Main = () =>{
       </span> 
       <div className="intro__text">
         <p>Nice to <br className="intro__text--br-hidden"/> meet you! I'm <span className="text--underline">Andrii Lishchyna</span>.</p>
-        <p>Based in the UK, I'm a front-end developer passionate about 
-          building accessible web apps that users love.</p>
+        <p>Based in the Canada, Toronto,  and I'm a front-end developer passionate about building accessible web apps that users love.</p>
         <a className="btn intro__link" href="#contact">Contact Me</a>
       </div>
-      <div className="intro__img">
-        <h3 className="img__title visually-hidden">Profile Photo</h3>
-      </div>
+      <ProfilePhoto/>
       <span className="decor__circle decor">
         <CircleSVG/>
       </span>
