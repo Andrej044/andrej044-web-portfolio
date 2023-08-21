@@ -1,7 +1,7 @@
 import { createElement} from "react";
 import React from "react";
 
- const Section = ({name, children,hidden}) => {
+ const Section = ({name, children, hidden}) => {
 const titleContent = name.charAt(0).toUpperCase() + name.slice(1);
 const childrenElements = children.map((elem, index) => {
   console.log(elem)
