@@ -18,7 +18,7 @@ const Main = () =>{
         <p>Based in the Canada, Toronto,  and I'm a front-end developer passionate about building accessible web apps that users love.</p>
         <a className="btn intro__link" href="#contact">Contact Me</a>
       </div>
-      <ProfilePhoto/>
+      <ProfilePhoto name='intro'/>
       <span className="decor__circle decor">
         <CircleSVG/>
       </span> 
