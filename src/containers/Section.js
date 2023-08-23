@@ -1,7 +1,7 @@
 import { createElement} from "react";
 import React from "react";
 
- const Section = ({name, children, hidden}) => {
+ const Section = ({name, children, titleHidden}) => {
 const titleContent = name.charAt(0).toUpperCase() + name.slice(1);
 const childrenElements = children.map((elem, index) => {
   console.log(elem)
@@ -9,7 +9,7 @@ const childrenElements = children.map((elem, index) => {
 }) 
 return(
   <section className={name}>
-    <h2 className={`${name}__title ${hidden ? 'visually-hidden' : ''}`}>{titleContent}</h2>
+    <h2 className={`${name}__title ${titleHidden ? 'visually-hidden' : ''}`}>{titleContent}</h2>
     {childrenElements}
   </section>
 )
