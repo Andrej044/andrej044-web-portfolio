@@ -2,6 +2,7 @@ import Section from "../Section";
 import ProfilePhoto from "../../components/profilePhoto";
 import CircleSVG from "../../components/svg/circleSVG";
 import RingsSVG from "../../components/svg/ringsSVG";
+import './Main.css';
 
 
 const Main = () =>{
