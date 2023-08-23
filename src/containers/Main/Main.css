@@ -1,0 +1,419 @@
+/* main */
+.main{
+  flex: 1;
+  width: 100%;
+  padding: 1.6rem;
+}
+
+  /*section intro*/
+  .intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s linear;
+
+  }
+  .intro__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.8rem;
+    order:2;
+    transition: 0.5s linear;
+
+  }
+  .intro__text p:first-child{
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+  }
+  .intro__text--br-hidden{
+    display: none;
+  }
+  .intro__text p{
+    line-height: 2.6rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .intro__text p:not(p:first-child){
+    color: var(--light-gray);
+    margin-top: 2.4rem;
+
+  }
+  .text--underline{
+    display: inline-block;
+    border-bottom: 4px solid var(--green);
+  }
+  .intro__link{
+    margin-top: 2.4rem;
+  }
+
+  .intro__img{
+    order: 1;
+    width: 100%;
+    height: 367px;
+    /* background: url("images/image-profile-mobile.webp") no-repeat; */
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  .intro .decor__rings {
+    top:14vh;
+    left:-342px;
+  }
+  .intro .decor__circle {
+    top:26.8vh;
+    left:calc(100vw - 75px);
+  }
+  /* end */
+
+  /* section skills */
+  .skills{
+    margin-top: 8rem;
+    padding: 4rem 0;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+
+  }
+  .skills__list{
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .skills__item:not(.skills__item:first-child){
+    margin-top: 2.4rem;
+  }
+  .skills__item h3{
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: bold;
+  }
+  .skills__item p {
+    line-height: 2.6rem;
+    color: var(--light-gray);
+    text-transform: capitalize;
+  }
+  
+  .skills .decor__rings {
+    top:140.7vh;
+    left:calc(100vw - 189px);
+  }
+
+  /* end */
+
+  /* section Projects */
+  .projects{
+    margin-top: 6rem;
+    padding-bottom: 8rem;
+  }
+  .projects__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s linear;
+
+  }
+  .projects__list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4rem;
+   transition: 0.5s linear;
+  }
+  .projects__item{
+    width: 100%;
+  }
+  .projects__item:not(.projects__item:first-child){
+    margin-top: 4rem;
+  }
+  .projects__preview-img{
+    max-width: 100%;
+  }
+  .projects__describe{
+    margin-top: 2rem;
+  }
+  .describe__title{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+  }
+  .projects__tech-list{
+    flex-wrap: wrap;
+    margin-top: 0.7rem;
+    gap: 1.8rem;
+  }
+  .describe__item{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    color: var(--light-gray);
+  }
+
+  .describe__links-wrapper{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    transition: 0.5s linear;
+  }
+  /* end */
+/* main end */
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  /* main */
+  .main{
+    padding: 0 3.2rem 2rem 3.2rem;
+  }
+    /*section intro*/
+    .intro{
+      margin-top: 15.1rem;
+      align-items: flex-start;
+    }
+    .intro__text{
+      min-width: 445px;
+      max-width: 70%;
+      align-items: flex-start;
+      margin-top: 0;
+    }
+
+    .intro__text p:first-child{
+      font-size: 7.2rem;
+      line-height: 7.2rem;
+      letter-spacing: -2.05px;
+      text-align: left;
+    }
+  
+    .intro__text--br-hidden{
+      display: block;
+    }
+
+    .intro__text p{
+      max-width: 450px;
+      line-height: 2.8rem;
+      font-size: 1.8rem;
+      text-align: left;
+    }
+
+    .intro__text p:not(p:first-child){
+      margin-top: 6.4rem;
+    }
+    .intro__link{
+      margin-top: 4.6rem;
+      text-align: left;
+    }
+    .intro__img{
+      position: absolute;
+      top:0;
+      right: 0;
+      max-width: 322px;
+      height: 600px;
+      /* background: url("images/image-profile-tablet.webp") no-repeat; */
+      background-size: cover;
+      z-index: -1;
+    }
+    .intro .decor__rings {
+      top:9vh;
+      left:-265px;
+    }
+    .intro .decor__circle {
+      top:50.5vh;
+      left:calc(100vw - 75px);
+    }
+    /* end */
+
+    /* section skills */
+    .skills{
+      margin-top: 6rem;
+      padding: 0;
+      border-bottom: none;
+    }
+    .skills__list{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+      text-align: left;
+    }
+    .skills__item:not(.skills__item:first-child), .skills__item:first-child{
+      margin-top: 5.2rem;
+    }
+    .skills__item h3{
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+      letter-spacing: -1.5px;
+    }
+    .skills__item p {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+    .skills .decor__rings {
+      top:107.5vh;
+      left:calc(100vw - 198px);
+    }
+    /* end */
+
+    /* section Projects */
+    .projects{
+      margin-top: 10rem;
+    }
+    .projects__title{
+      letter-spacing: -2.04545px;
+    }
+    .projects__list{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
+      margin: 0;
+    }
+    .projects__item:not(.projects__item:first-child),.projects__item{
+      margin-top: 6rem;
+    }
+    .describe__title{
+      letter-spacing: 0;
+    }
+    /* end */
+  /* main end */
+}
+
+@media screen and (min-width:1440px) {
+  /* main */
+  .main{
+    padding: 0 16.5rem 2rem 16.5rem;
+  }
+    /*section intro*/
+    .intro{
+      margin-top: 19.8rem;
+    }  
+    .intro__text{
+      min-width: 706px;
+    }
+    .intro__text p:first-child{
+      max-width: 706px;
+      font-size: 8.8rem;
+      line-height: 8.8rem;
+      letter-spacing: -2.5px;
+      text-align: left;
+    }
+
+    .intro__text--br-hidden{
+      display:none;
+    }
+    .text--underline{
+      border-width: 6px;
+    }
+
+    .intro__text p{
+      max-width: 445px;
+      line-height: 2.8rem;
+      font-size: 1.8rem;
+      text-align: left;
+    }
+    .intro__text p:not(p:first-child){
+      margin-top: 3.7rem;
+    }
+    .intro__link{
+      margin-top: 6.6rem;
+    }
+    .intro__img{
+      position: absolute;
+      right: 16.5rem;
+      max-width: 445px;
+      height: 720px;
+      /* background: url("images/image-profile-desktop.webp")  no-repeat; */
+      background-size: contain;
+    }
+    .intro .decor__rings {
+      top:14.1vh;
+      left:-99px;
+    }
+    .intro .decor__circle {
+      top:57.8vh;
+      left:calc(100vw - 672.5px);
+    }
+    /* end */
+    
+    /* section skills */
+    .skills{
+      margin-top: 21.9rem;
+      padding: 2rem 0.5rem
+    }    
+    .skills__list{
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3rem;
+    }
+    .skills__item{
+      min-width: 345px;
+    }
+    .skills__list .skills__item:nth-child(n+4){
+      margin-top: 5.8rem;
+    }
+    .skills__item p {
+      font-size: 1.8rem;
+      margin-top: 1.4rem;
+    }
+    .skills .decor__rings {
+      top:115vh;
+      left:calc(100vw - 290px);
+    }
+    /* end */
+    
+    /* section Projects */
+    .projects{
+      margin-top: 12rem;
+      padding-bottom: 11.9rem;
+
+    }
+    .projects__list{
+      gap: 0;
+      column-gap: 3rem;
+    }
+    .projects__item{
+      position: relative;
+      min-width: 540px;
+      max-width: 540px;
+    }
+    .projects__item:hover .describe__links-wrapper{
+      display: flex;
+    }
+    .projects__item:not(.projects__item:first-child),.projects__item{
+      margin-top: 8rem;
+    }
+    .projects__list .projects__item:nth-child(n+3){
+      margin-top: 6.9rem;
+    }
+
+    .projects__item:nth-child(even){
+      justify-self: flex-end;
+    }
+    .projects__preview-img{
+      max-height: 400px;
+    }
+    .preview-img--wrapper{
+      max-width: 540px;
+      max-height: 400px;
+      overflow: hidden;
+    }
+    .preview-img--wrapper > img {
+      transform: scale(1.3) translate(5.9rem, 4.6rem);
+    }
+
+    .describe__links-wrapper{
+      position: absolute;
+      top:0;
+      left: 0;
+      display: none;
+      align-items: center;
+      justify-content:  center;
+      width: 100%;
+      height: calc(100% - 17.5%);
+      flex-direction: column;
+      margin: 0 auto;
+      background-color: rgba(0,0,0,0.75);
+    }
+     /* end */
+  /* main end */
+}
