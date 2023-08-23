@@ -5,13 +5,12 @@ import RingsSVG from "../components/svg/ringsSVG";
 
 const Main = () =>{
   return(
-    <main className="main">
+  <main className="main">
     <h1 className="main-title visually-hidden">Web developer portfolio Andrii Lishchyna</h1>
-    <section className="intro">
-      <h2 className="intro__title visually-hidden">Introduce</h2>
+    <Section name='intro' titleHidden={true} >
       <span className="decor__rings decor">
         <RingsSVG/>
-      </span> 
+      </span>
       <div className="intro__text">
         <p>Nice to <br className="intro__text--br-hidden"/> meet you! I'm <span className="text--underline">Andrii Lishchyna</span>.</p>
         <p>Based in the Canada, Toronto,  and I'm a front-end developer passionate about building accessible web apps that users love.</p>
@@ -20,8 +19,8 @@ const Main = () =>{
       <ProfilePhoto/>
       <span className="decor__circle decor">
         <CircleSVG/>
-      </span>
-    </section>
+      </span> 
+    </Section>
     <section className="skills">
       <h2 className="skills__title visually-hidden">Skills</h2>
       <span className="decor__rings decor">
@@ -152,10 +151,6 @@ const Main = () =>{
         </li>
       </ul>
     </section>
-    <Section>
-      <p>Hello</p>
-      <div>fsdg</div>
-    </Section>
   </main>
   )
 }
