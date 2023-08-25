@@ -23,39 +23,38 @@ const Main = () =>{
         <CircleSVG/>
       </span> 
     </Section>
-    <section className="skills">
-      <h2 className="skills__title visually-hidden">Skills</h2>
+    <Section name='skills' titleHidden={true}>
       <span className="decor__rings decor">
-        <RingsSVG/>
+          <RingsSVG/>
       </span>
       <ul className="skills__list">
-       <li className="skills__item">
-        <h3>HTML</h3>
-        <p>4 Years experience</p>
-       </li>
-       <li className="skills__item">
-        <h3>CSS</h3>
-        <p>4 Years experience</p>
-       </li>
-       <li className="skills__item">
-        <h3>Javascript</h3>
-        <p>4 Years experience</p>
-       </li>
-       <li className="skills__item">
-        <h3>Accessibility</h3>
-        <p>4 Years experience</p>
-       </li>
-       <li className="skills__item">
-        <h3>React</h3>
-        <p>3 Years experience</p>
-       </li>
-       <li className="skills__item">
-        <h3>Sass</h3>
-        <p>3 Years experience</p>
-       </li>
-      </ul>
-    </section>
-    <section className="projects">
+        <li className="skills__item">
+          <h3>HTML</h3>
+          <p>4 Years experience</p>
+        </li>
+        <li className="skills__item">
+          <h3>CSS</h3>
+          <p>4 Years experience</p>
+        </li>
+        <li className="skills__item">
+          <h3>Javascript</h3>
+          <p>4 Years experience</p>
+        </li>
+        <li className="skills__item">
+          <h3>Accessibility</h3>
+          <p>4 Years experience</p>
+        </li>
+        <li className="skills__item">
+          <h3>React</h3>
+          <p>3 Years experience</p>
+        </li>
+        <li className="skills__item">
+          <h3>Sass</h3>
+          <p>3 Years experience</p>
+        </li>
+      </ul>       
+    </Section>
+    <Section name='projects' titleHidden={true}>
       <div className="projects__wrapper">
         <h2 className="projects__title title">projects</h2>
         <a className="btn projects__link" href="#contact">Contact Me</a>
@@ -152,7 +151,7 @@ const Main = () =>{
           </div>
         </li>
       </ul>
-    </section>
+    </Section>
   </main>
   )
 }
