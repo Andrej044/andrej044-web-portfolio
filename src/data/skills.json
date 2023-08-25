@@ -1,8 +1,28 @@
 {
-  "HTML": 4,
-  "CSS":4,
-  "JavaScript":4,
-  "Accessibility":4,
-  "React.js":3,
-  "Node.js":2
+"skills" :[
+  {
+    "name":"HTML",
+    "rate":4
+  },
+  {
+    "name":"CSS",
+    "rate":4
+  },
+  {
+    "name":"JavaScript",
+    "rate":4
+  },
+  {
+    "name":"Accessibility",
+    "rate":4
+  },
+  {
+    "name":"React.js",
+    "rate":3
+  },
+  {
+    "name":"Node.js",
+    "rate":2
+  }
+]
 }
