@@ -17,6 +17,19 @@ const ProjectsList = () => {
 
   const [{projects}, setProjects] = useState(ProjectsInitialState);
 
+  const fetchProjects = () => {
+    fetch('./data/projects.json')
+    .then(response => response.json())
+    .then(projectsList => {
+      setProjects(projectsList);  
+    })
+    .catch(error => console.log(`Heare is a problem: ${error}`))
+  }
+
+  useEffect(()=>{
+    fetchProjects()
+  },[])
+  
   console.log(projects)
 
   const projectsList = projects.map(project => {
