@@ -29,8 +29,7 @@ const ProjectsList = () => {
   useEffect(()=>{
     fetchProjects()
   },[])
-  
-  console.log(projects)
+
 
   const projectsList = projects.map(project => {
     return (
