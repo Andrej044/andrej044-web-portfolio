@@ -1,6 +1,0 @@
- const SkillList = () => {
-  return(
-    <></>
-  )
- }
- export default SkillList
