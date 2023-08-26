@@ -1,4 +1,6 @@
+import ProjectsLinkComponent from "./projectLinksComponent";
 import { useEffect, useState } from "react";
+
 
 const ProjectsInitialState = {
   projects:[{
@@ -31,8 +33,10 @@ const ProjectsList = () => {
               )}
             </ul>
             <div className="describe__links-wrapper">
-              <a className="btn" href="/some/valid/uri">view projects</a>
-              <a className="btn" href="/some/valid/uri">view code</a>
+              <ProjectsLinkComponent 
+                projectLink = {project.projectLink} 
+                projectCode = {project.projectCode} 
+              />  
             </div>
           </div>
         </li>
