@@ -2,6 +2,7 @@ import Section from "../Section";
 import ProfilePhoto from "../../components/profilePhoto";
 import CircleSVG from "../../components/svg/circleSVG";
 import RingsSVG from "../../components/svg/ringsSVG";
+import SkillList from "../../components/skillsList.js";
 import './Main.css';
 
 
@@ -27,36 +28,11 @@ const Main = () =>{
       <span className="decor__rings decor">
           <RingsSVG/>
       </span>
-      <ul className="skills__list">
-        <li className="skills__item">
-          <h3>HTML</h3>
-          <p>4 Years experience</p>
-        </li>
-        <li className="skills__item">
-          <h3>CSS</h3>
-          <p>4 Years experience</p>
-        </li>
-        <li className="skills__item">
-          <h3>Javascript</h3>
-          <p>4 Years experience</p>
-        </li>
-        <li className="skills__item">
-          <h3>Accessibility</h3>
-          <p>4 Years experience</p>
-        </li>
-        <li className="skills__item">
-          <h3>React</h3>
-          <p>3 Years experience</p>
-        </li>
-        <li className="skills__item">
-          <h3>Sass</h3>
-          <p>3 Years experience</p>
-        </li>
-      </ul>       
+      <SkillList/>
     </Section>
     <Section name='projects' titleHidden={true}>
       <div className="projects__wrapper">
-        <h2 className="projects__title title">projects</h2>
+        <h2 className="projects__title title">Projects</h2>
         <a className="btn projects__link" href="#contact">Contact Me</a>
       </div>
       <ul className="projects__list">
