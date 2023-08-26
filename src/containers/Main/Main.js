@@ -38,7 +38,7 @@ const Main = () =>{
         <a className="btn projects__link" href="#contact">Contact Me</a>
       </div>
       <ProjectsList/>
-      <ul className="projects__list">
+      {/* <ul className="projects__list">
         <li className="projects__item">
           <img className="projects__preview-img" src="images/thumbnail-project-1-large.webp" alt="design portfolio" />
           <div className="projects__describe">
@@ -129,7 +129,7 @@ const Main = () =>{
             </div>
           </div>
         </li>
-      </ul>
+      </ul> */}
     </Section>
   </main>
   )
