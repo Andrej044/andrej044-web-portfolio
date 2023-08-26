@@ -3,6 +3,8 @@ import ProfilePhoto from "../../components/profilePhoto";
 import CircleSVG from "../../components/svg/circleSVG";
 import RingsSVG from "../../components/svg/ringsSVG";
 import SkillList from "../../components/skillsList.js";
+import ProjectsList from "../../components/projectsList";
+
 import './Main.css';
 
 
@@ -35,6 +37,7 @@ const Main = () =>{
         <h2 className="projects__title title">Projects</h2>
         <a className="btn projects__link" href="#contact">Contact Me</a>
       </div>
+      <ProjectsList/>
       <ul className="projects__list">
         <li className="projects__item">
           <img className="projects__preview-img" src="images/thumbnail-project-1-large.webp" alt="design portfolio" />
