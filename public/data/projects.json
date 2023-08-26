@@ -1,0 +1,9 @@
+{
+  "projects" : [
+    {
+      "title":"design portfolio",
+      "src":"images/thumbnail-project-1-large.webp",
+      "techstack":["HTML","CSS","React"]
+    }
+  ]
+}
