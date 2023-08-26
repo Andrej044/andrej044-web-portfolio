@@ -8,15 +8,15 @@
  }
 
  const SkillList = () => {
-  const [data, setData] = useState(SkillsInitialState);
+  const [skills, setData] = useState(SkillsInitialState);
 
   const fetchSkillsJson = () => {
     fetch('data/skills.json')
       .then(response => {
         return response.json()
       })
-      .then( data => {
-        setData(data);
+      .then( skills => {
+        setData(skills);
       })
       .catch(error => console.log(`This is cause -- ${error} -- why is not working`))
   }
@@ -25,7 +25,7 @@
     fetchSkillsJson();
   },[])
 
-  const skillList = data.skills.map( (skill, index) => {
+  const skillList = skills.skills.map( (skill, index) => {
    return (
       <li className="skills__item" key={index}>
         <h3>{skill.name}</h3>
