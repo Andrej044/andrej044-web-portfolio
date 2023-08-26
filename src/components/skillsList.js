@@ -1,9 +1,10 @@
- import { useEffect, useState} from "react"
+ import { useEffect, useState} from "react";
 
 
  const SkillsInitialState =  {
+  skills: [{
     "name":"none",
-    "rate":0
+    "rate":0 }]
  }
 
  const SkillList = () => {
@@ -15,22 +16,28 @@
         return response.json()
       })
       .then( data => {
-        console.log(data)
         setData(data);
       })
       .catch(error => console.log(`This is cause -- ${error} -- why is not working`))
   }
+
   useEffect(() => {
     fetchSkillsJson();
   },[])
 
- 
+  const skillList = data.skills.map( (skill, index) => {
+   return (
+      <li className="skills__item" key={index}>
+        <h3>{skill.name}</h3>
+        <p>{skill.rate}</p>
+      </li>
+   )
+  });
 
   return(
-    <> 
-    <h2>{data.name}</h2>
-    <h2>{data.rate}</h2>
-    </>
+    <ul className="skills__list">
+      {skillList}
+    </ul>
   )
  }
- export default SkillList
+ export default SkillList;
