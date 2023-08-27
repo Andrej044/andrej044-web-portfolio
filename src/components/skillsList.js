@@ -1,4 +1,5 @@
  import { useEffect, useState} from "react";
+ import Star from "./svg/star";
 
 
  const SkillsInitialState =  {
@@ -9,6 +10,8 @@
 
  const SkillList = () => {
   const [skills, setData] = useState(SkillsInitialState);
+  // const [stars, setStars] = useState([]);
+
 
   const fetchSkillsJson = () => {
     fetch('data/skills.json')
@@ -23,13 +26,23 @@
 
   useEffect(() => {
     fetchSkillsJson();
-  },[])
+  },[]);
 
+  
   const skillList = skills.skills.map( (skill, index) => {
+    const stars = [];
+    for(let i=0; i<5; i++){
+      stars.push(<li key={i}><Star/></li>)
+    }
+    const starList = stars.map((item,index) => {
+      return index < skill.rate ? <li key={index}><Star color ='rgb(78,225,160)'/></li> : <li key={index}><Star strokeColor="rgb(78,225,160)"/></li> 
+    })
+
    return (
       <li className="skills__item" key={index}>
         <h3>{skill.name}</h3>
         <p>{skill.rate}</p>
+        <ul>{starList}</ul>
       </li>
    )
   });
