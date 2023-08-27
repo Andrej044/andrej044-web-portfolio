@@ -1,0 +1,78 @@
+.form__input-wrapper{
+  width: 100%;
+  height: 4.3rem;
+
+}
+.form__input{
+  width: 100%;
+  background: transparent;
+  font-family: SpaceGrotesk;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-left: 2.4rem;
+  padding-bottom: 1.6rem;
+  color:var(--white);
+  border: none;
+  border-bottom: 1px solid var(--white);
+  text-transform: uppercase;
+}
+.form__input-wrapper:not(.form__input-wrapper:first-child){
+  margin-top: 3.2rem;
+}
+.form__input:focus-visible{
+  outline: none;
+}
+.form__input::placeholder{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: SpaceGrotesk;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+.form__input:focus{
+  border-color:  var(--green);
+}
+
+.input-email{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.form__input[type="email"]:invalid{
+  border-color:  var(--alert);
+}
+.email-alert{
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.166667px;
+  color: var(--alert);
+}
+.email-alert.hidden{
+  display: none;
+}
+.email-alert.hidden::before{
+  content: url("./alert.svg");
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.form__input[type="email"]:invalid + .email-alert.hidden{
+  display: block;
+}
+
+.input-message{
+  height: 107px;
+}
+.input-message textarea{
+  height: 107px;
+  resize: none;
+}
+.form__btn-submit{
+  align-self: flex-end;
+  margin-top: 3.2rem;
+}
+
