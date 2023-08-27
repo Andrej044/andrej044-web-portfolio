@@ -3,9 +3,17 @@
   background: var(--dark-gray) ;
   padding: 6rem 1.6rem;
 }
+.footer-nav{
+  margin-top:3.9rem
+}
 
 @media screen and (min-width:1440px) {
 .footer{
   padding: 8.4rem 16.5rem;
+  }
+  .footer-nav{
+    margin-top: 5rem;
+    margin-bottom: 0;
+    padding: 0;
   }
 }
