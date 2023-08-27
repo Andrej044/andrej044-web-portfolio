@@ -10,7 +10,6 @@
 
  const SkillList = () => {
   const [skills, setData] = useState(SkillsInitialState);
-  // const [stars, setStars] = useState([]);
 
 
   const fetchSkillsJson = () => {
@@ -41,7 +40,6 @@
    return (
       <li className="skills__item" key={index}>
         <h3>{skill.name}</h3>
-        <p>{skill.rate}</p>
         <ul>{starList}</ul>
       </li>
    )
