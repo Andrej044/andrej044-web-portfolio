@@ -4,6 +4,7 @@ import './messageForm.css';
 const MessageForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('')
 
   return(
     <form id="myForm">
@@ -33,7 +34,15 @@ const MessageForm = () => {
           <span className="email-alert hidden">Sorry, invalid format here</span>
         </div>
         <div className="form__input-wrapper input-message">
-          <textarea className="form__input" id="message" name="message" placeholder="message" spellCheck="false" required></textarea>
+          <textarea 
+            className="form__input"
+            value={message}
+            onChange={e => setMessage(e.target.valueS)} 
+            id="message" 
+            name="message" 
+            placeholder="message" 
+            spellCheck="false" 
+            required></textarea>
         </div>
         <button id="submit" className="btn form__btn-submit" type="submit">
           send message
