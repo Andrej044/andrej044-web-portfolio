@@ -3,7 +3,7 @@ import './messageForm.css';
 
 const MessageForm = () => {
   const [name, setName] = useState('');
-
+  const [email, setEmail] = useState('');
 
   return(
     <form id="myForm">
@@ -21,7 +21,15 @@ const MessageForm = () => {
             required/>
         </div>
         <div className="form__input-wrapper input-email">
-          <input className="form__input" id="email" name="email" type="email" placeholder="email" autoComplete="off" />
+          <input 
+            className="form__input"
+            value={email}
+            onChange={e => setEmail(e.target.value)} 
+            id="email" 
+            name="email" 
+            type="email" 
+            placeholder="email" 
+            autoComplete="off" />
           <span className="email-alert hidden">Sorry, invalid format here</span>
         </div>
         <div className="form__input-wrapper input-message">
