@@ -37,7 +37,7 @@ const MessageForm = () => {
           <textarea 
             className="form__input"
             value={message}
-            onChange={e => setMessage(e.target.valueS)} 
+            onChange={e => setMessage(e.target.value)} 
             id="message" 
             name="message" 
             placeholder="message" 
