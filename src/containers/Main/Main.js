@@ -26,7 +26,7 @@ const Main = () =>{
         <CircleSVG/>
       </span> 
     </Section>
-    <Section name='skills' titleHidden={true}>
+    <Section name='skills' titleHidden={false}>
       <span className="decor__rings decor">
           <RingsSVG/>
       </span>
