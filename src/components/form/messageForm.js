@@ -3,34 +3,48 @@ import { useForm } from 'react-hook-form';
 import './messageForm.css';
 
 const MessageForm = () => {
+
+  const {register, handleSubmit} = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data)
+  }
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit =(e)=>{
-    e.preventDefault();
+  // const handleSubmit =(e)=>{
+  //   e.preventDefault();
     
-    const form = e.target;
-    const formData = new FormData(form);
+  //   const form = e.target;
+  //   const formData = new FormData(form);
 
-    const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson)
-  }
+  //   const formJson = Object.fromEntries(formData.entries());
+  //   console.log(formJson)
+  // }
 
   return(
-    <form id="myForm" method='post' onSubmit={handleSubmit}>
+    <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)}>
       <div className="contact-form">
         <div className="form__input-wrapper">  
           <input 
+            {...register('name', {
+              required:true, 
+              minLength:6,
+              maxLength:30,
+              pattern:/^[A-Za-z]+$/i,
+              })}
             className="form__input" 
-            value={name}
-            onChange={e=>setName(e.target.value)} 
+            // value={name}
+            // onChange={e=>setName(e.target.value)} 
             id="name" 
             name="name" 
             type="text" 
             placeholder="name" 
             autoComplete="name" 
-            required/>
+            // required
+            />
         </div>
         <div className="form__input-wrapper input-email">
           <input 
