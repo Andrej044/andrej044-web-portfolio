@@ -1,7 +1,10 @@
-const Input = (name, placeholder) => {
+import { useForm } from "react-hook-form"
 
+const Input = (name, placeholder) => {
+  const {register, formState:{errors}} = useForm();
+  
   return(
-    <input />
+    <input {...register(name)} placeholder={placeholder}/>
   )
 }
 
