@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import Input from './input';
 import './messageForm.css';
 
+
 const MessageForm = () => {
 
-  const {register, handleSubmit, formState:{errors}} = useForm();
+  const {register, handleSubmit, formState:{errors}, control} = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
@@ -68,7 +68,27 @@ const MessageForm = () => {
           <span className="email-alert">{errors?.textMessage && (errors?.textMessage?.message || 'Error!')}</span>
         </div>
         <div className="form__input-wrapper">
-          <Input/>
+          <Controller
+            name="Input"
+            control={control}
+            rules={{required:{
+              value:true,
+              message: 'This field required!!!!!!!!'
+            }}}
+            render={({ 
+              field:{onChange, value},
+              fieldState: {error}  
+              }) => (
+              <Input 
+                placeholder= "Password"
+                className="form__input"
+                type = "input"
+                errors = {error}
+                onChange = {onChange}
+                value = {value}
+              />
+            )}
+          />
         </div>
         <button id="submit" className="btn form__btn-submit" type="submit">
           send message
