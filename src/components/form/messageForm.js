@@ -67,14 +67,9 @@ const MessageForm = () => {
             spellCheck="false" ></textarea>
           <span className="email-alert">{errors?.textMessage && (errors?.textMessage?.message || 'Error!')}</span>
         </div>
-        {/* <div className="form__input-wrapper">
-          <Input {...register('password', {
-            required:{
-              value:true,
-              message: 'this field is required'
-            }
-          })} name="password" placeholder="Enter password" className="form__input" errors= {errors}/>
-        </div> */}
+        <div className="form__input-wrapper">
+          <Input/>
+        </div>
         <button id="submit" className="btn form__btn-submit" type="submit">
           send message
         </button>
