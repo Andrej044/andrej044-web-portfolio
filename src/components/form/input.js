@@ -1,8 +1,7 @@
 import { useState} from "react";
 
 const Input = (props) => {
-  const {name, errors, placeholder, className} = props;
-  console.log(errors)
+  const {name, errors, placeholder, className, onChange} = props;
   
   const [value, setValue] = useState(props.value || "");
   return(
@@ -14,7 +13,7 @@ const Input = (props) => {
         placeholder={placeholder}       
         onChange={(e) => {
           setValue(e.target.value);
-        props.onChange && props.onChange(e)
+          onChange && onChange(e)
         }}/>
        <span className="email-alert">{errors && (errors?.message || 'Error!')}</span>
      </>
