@@ -5,9 +5,13 @@ import './messageForm.css';
 
 const MessageForm = () => {
 
+const apiKey = 'cb7314871103477bafe9677e5fe1c283';
+const apiURL = 'https://emailvalidation.abstractapi.com/v1/?api_key=' + apiKey;
+
   const { handleSubmit,  control} = useForm();
 
   const onSubmit = (data) => {
+
     console.log(data);
   }
 
