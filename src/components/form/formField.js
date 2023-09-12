@@ -20,8 +20,8 @@ const FormField = (props) => {
   
   return(
     <>
+       <span className={errors?.message ? "alert" : ""}>{errors && (errors?.message || 'Error!')}</span>
       {inputType}
-       <span className="email-alert">{errors && (errors?.message || 'Error!')}</span>
      </>
   )
 }
