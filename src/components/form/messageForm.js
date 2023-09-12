@@ -1,4 +1,4 @@
-// import React, {useRef} from 'react';
+import React, {useRef} from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import FormField from './formField';
@@ -8,14 +8,20 @@ import './messageForm.css';
 const MessageForm = () => {
 
   const { handleSubmit,  control} = useForm();
-
+  const form = useRef();
 
   const onSubmit = (data) => {
-    console.log(data);
+
+    emailjs.sendForm('service_7u9iss8', 'template_yxie3y1', form.current, 'pdBeFRcrGLSWWeybO')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
   }
 
   return(
-    <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)}>
+    <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)} ref={form}>
       <div className="contact-form">
         <div className="form__input-wrapper">
         <Controller
@@ -41,6 +47,7 @@ const MessageForm = () => {
               }) => (
               <FormField 
                 placeholder= "name"
+                name="user_name"
                 className="form__input"
                 formField = "input"
                 type="text"
@@ -68,6 +75,7 @@ const MessageForm = () => {
               }) => (
               <FormField 
                 placeholder= "email"
+                name="user_email"
                 className="form__input"
                 formField = "input"
                 type="email"
@@ -94,6 +102,7 @@ const MessageForm = () => {
               }) => (
               <FormField 
                 placeholder= "Could you kindly provide me with a sentence that consists of at least 25 characters?"
+                name="user_message"
                 className="form__input"
                 formField = "textarea"
                 errors = {error}
