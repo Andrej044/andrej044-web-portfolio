@@ -16,6 +16,11 @@
   border-bottom: 1px solid var(--white);
   text-transform: uppercase;
 }
+.form__input-wrapper{
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+}
 .form__input-wrapper:not(.form__input-wrapper:first-child){
   margin-top: 3.2rem;
 }
@@ -33,15 +38,11 @@
   border-color:  var(--green);
 }
 
-.input-email{
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-.form__input[type="email"]:invalid{
+span.alert + .form__input {
   border-color:  var(--alert);
 }
-.email-alert{
+.alert{
+  bottom: 0;
   width: 100%;
   text-align: right;
   font-size: 1.2rem;
@@ -52,7 +53,7 @@
 .email-alert.hidden{
   display: none;
 }
-.email-alert.hidden::before{
+.alert::before{
   content: url("./alert.svg");
   position: absolute;
   top:0;
@@ -60,7 +61,7 @@
   width: 2.4rem;
   height: 2.4rem;
 }
-.form__input[type="email"]:invalid + .email-alert.hidden{
+.form__input:invalid + .email-alert.hidden{
   display: block;
 }
 
