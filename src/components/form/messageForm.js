@@ -1,5 +1,5 @@
 import { useForm, Controller } from 'react-hook-form';
-import FormField from './input';
+import FormField from './formField';
 import './messageForm.css';
 
 
