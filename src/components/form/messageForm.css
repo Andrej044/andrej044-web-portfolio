@@ -1,7 +1,5 @@
 .form__input-wrapper{
   width: 100%;
-  height: 4.3rem;
-
 }
 .form__input{
   width: 100%;
@@ -15,6 +13,7 @@
   border: none;
   border-bottom: 1px solid var(--white);
   text-transform: uppercase;
+  z-index: 2;
 }
 .form__input-wrapper{
   display: flex;
@@ -41,7 +40,18 @@
 span.alert + .form__input {
   border-color:  var(--alert);
 }
+.empty{
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.166667px;
+}
 .alert{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: right;
@@ -50,14 +60,9 @@ span.alert + .form__input {
   letter-spacing: -0.166667px;
   color: var(--alert);
 }
-.email-alert.hidden{
-  display: none;
-}
 .alert::before{
   content: url("./alert.svg");
-  position: absolute;
-  top:0;
-  right: 0;
+  align-self: flex-end;
   width: 2.4rem;
   height: 2.4rem;
 }
@@ -65,11 +70,8 @@ span.alert + .form__input {
   display: block;
 }
 
-.input-message{
-  height: 107px;
-}
 .input-message textarea{
-  height: 107px;
+  height: 250px;
   resize: none;
 }
 .form__btn-submit{
