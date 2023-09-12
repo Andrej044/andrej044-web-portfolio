@@ -1,15 +1,16 @@
 import { createElement, useState} from "react";
 
 const FormField = (props) => {
-  const {name, type, errors, placeholder, className, onChange} = props;
+  const {name, formField, errors, placeholder, className, onChange, type} = props;
   
   const [value, setValue] = useState(props.value || "");
   
   const inputType = createElement(
-      type, 
+      formField, 
       {name:name, 
       className:className,   
-      value:value, 
+      value:value,
+      type:type, 
       placeholder:placeholder,       
       onChange:(e) => {
       setValue(e.target.value);
