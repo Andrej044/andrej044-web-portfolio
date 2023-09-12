@@ -47,27 +47,6 @@ const MessageForm = () => {
               />
             )}
             />  
-          {/* <input 
-            {...register('firstName', {
-              required:"Field is required", 
-              minLength:{
-                value:5,
-                message:"Minimum name length 5 characters"
-              },
-              maxLength:{
-                value:30,
-                message:"Minimum name length 30 characters"
-              },
-              pattern:{
-                value:/^[a-zA-Z0-9_ ]*$/i,
-                message: 'Wrong format'
-                }}
-                )}
-            className="form__input" 
-            type="text" 
-            placeholder="name" 
-            autoComplete="name" 
-            /> */}
         </div>
         <div className="form__input-wrapper input-email">
           <Controller
