@@ -1,5 +1,5 @@
 import { useForm, Controller } from 'react-hook-form';
-import Input from './input';
+import FormField from './input';
 import './messageForm.css';
 
 
@@ -79,7 +79,7 @@ const MessageForm = () => {
               field:{onChange, value},
               fieldState: {error}  
               }) => (
-              <Input 
+              <FormField 
                 placeholder= "Password"
                 className="form__input"
                 type = "input"
