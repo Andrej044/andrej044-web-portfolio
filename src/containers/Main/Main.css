@@ -213,10 +213,10 @@
     .intro__img{
       position: absolute;
       top:0;
-      right: 0;
-      max-width: 322px;
+      right: 16.5rem;
+      max-width: 350px;
       height: 600px;
-      background-size: cover;
+      background-size: contain;
       /* z-index: -1; */
     }
     .intro .decor__rings {
