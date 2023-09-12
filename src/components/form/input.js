@@ -1,6 +1,6 @@
 import { createElement, useState} from "react";
 
-const Input = (props) => {
+const FormField = (props) => {
   const {name, type, errors, placeholder, className, onChange} = props;
   
   const [value, setValue] = useState(props.value || "");
@@ -25,4 +25,4 @@ const Input = (props) => {
   )
 }
 
-export default Input
+export default FormField
