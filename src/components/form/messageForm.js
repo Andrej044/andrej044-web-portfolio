@@ -5,7 +5,7 @@ import './messageForm.css';
 
 const MessageForm = () => {
 
-  const {register, handleSubmit, formState:{errors}, control} = useForm();
+  const { handleSubmit,  control} = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
@@ -14,8 +14,40 @@ const MessageForm = () => {
   return(
     <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)}>
       <div className="contact-form">
-        <div className="form__input-wrapper">  
-          <input 
+        <div className="form__input-wrapper">
+        <Controller
+            name="Name"
+            control={control}
+            rules={{
+              required:"Field is required", 
+              minLength:{
+                value:5,
+                message:"Minimum name length 5 characters"
+              },
+              maxLength:{
+                value:30,
+                message:"Minimum name length 30 characters"
+              },
+              pattern:{
+                value:/^[a-zA-Z0-9_ ]*$/i,
+                message: 'Wrong format'
+                }}}
+            render={({ 
+              field:{onChange, value},
+              fieldState: {error}  
+              }) => (
+              <FormField 
+                placeholder= "name"
+                className="form__input"
+                formField = "input"
+                type="text"
+                errors = {error}
+                onChange = {onChange}
+                value = {value}
+              />
+            )}
+            />  
+          {/* <input 
             {...register('firstName', {
               required:"Field is required", 
               minLength:{
@@ -27,7 +59,7 @@ const MessageForm = () => {
                 message:"Minimum name length 30 characters"
               },
               pattern:{
-                value:/^[A-Za-z]+$/i,
+                value:/^[a-zA-Z0-9_ ]*$/i,
                 message: 'Wrong format'
                 }}
                 )}
@@ -35,54 +67,53 @@ const MessageForm = () => {
             type="text" 
             placeholder="name" 
             autoComplete="name" 
-            />
-          <span className="email-alert">{errors?.firstName && (errors?.firstName?.message || 'Error!')}</span>
+            /> */}
         </div>
         <div className="form__input-wrapper input-email">
-          <input 
-            {...register('email', {
+          <Controller
+            name="Email"
+            control={control}
+            rules={{
             required:"Field is required",
             pattern:{
               value:/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
               message:'Please enter valid email'
               }
-            })}
-            className="form__input"
-            type="email" 
-            placeholder="email" 
-            autoComplete="off" />
-          <span className="email-alert">{errors?.email && (errors?.email?.message || 'Error!')}</span>
-        </div>
-        <div className="form__input-wrapper input-message">
-          <textarea 
-            {...register('textMessage', {
-              required:"Field is required",
-              minLength:{
-                value:25,
-                message:"Could you kindly provide me with a sentence that consists of at least 25 characters?"
-              }
-            })}
-            className="form__input"
-            placeholder="Could you kindly provide me with a sentence that consists of at least 25 characters?" 
-            spellCheck="false" ></textarea>
-          <span className="email-alert">{errors?.textMessage && (errors?.textMessage?.message || 'Error!')}</span>
-        </div>
-        <div className="form__input-wrapper">
-          <Controller
-            name="Input"
-            control={control}
-            rules={{required:{
-              value:true,
-              message: 'This field required!!!!!!!!'
-            }}}
+            }}
             render={({ 
               field:{onChange, value},
               fieldState: {error}  
               }) => (
               <FormField 
-                placeholder= "Password"
+                placeholder= "email"
                 className="form__input"
-                type = "input"
+                formField = "input"
+                type="email"
+                errors = {error}
+                onChange = {onChange}
+                value = {value}
+              />
+            )}
+            />
+        </div>
+        <div className="form__input-wrapper input-message">
+          <Controller
+            name="Message"
+            control={control}
+            rules={{
+              required:"Field is required",
+              minLength:{
+                value:25,
+                message:"Could you kindly provide me with a sentence that consists of at least 25 characters?"
+              }}}
+            render={({ 
+              field:{onChange, value},
+              fieldState: {error}  
+              }) => (
+              <FormField 
+                placeholder= "Could you kindly provide me with a sentence that consists of at least 25 characters?"
+                className="form__input"
+                formField = "textarea"
                 errors = {error}
                 onChange = {onChange}
                 value = {value}
