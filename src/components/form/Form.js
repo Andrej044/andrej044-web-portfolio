@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import {useRef, useEffect} from 'react';
 import { useForm} from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import './messageForm.css';
@@ -25,6 +25,15 @@ const Form = () => {
     });
 
  }
+
+ useEffect(()=>{
+  if(formState.isSubmitSuccessful){
+    reset({
+    Name:"",
+    Email:"",
+    Message:""})
+  }
+ }, [formState, reset])
 
   return(
     <form>
