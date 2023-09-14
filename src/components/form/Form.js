@@ -36,10 +36,10 @@ const Form = () => {
  }, [formState, reset])
 
   return(
-    <form onSubmit={handleSubmit(onSubmit)} ref={form}>
-      <input className="form__input" {...register("Name")} />
-      <input className="form__input" {...register("Email")} />
-      <input className="form__input" {...register("Message")} />
+    <form method='post' onSubmit={handleSubmit(onSubmit)} ref={form}>
+      <input name="Name" className="form__input" {...register("Name")} />
+      <input name="Email" className="form__input" {...register("Email")} />
+      <input name="Message" className="form__input" {...register("Message")} />
       <input id="submit" className="btn form__btn-submit" type="submit" value={'send message'}/>
     </form>
   )
