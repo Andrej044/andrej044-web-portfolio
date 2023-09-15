@@ -7,16 +7,19 @@ import './messageForm.css';
 
 
 const Form = () => {
-  const form = useRef();
-  const {register, handleSubmit, reset, formState, formState:{isSubmitSuccesful}} = useForm ({
+  const {register, handleSubmit, reset, formState} = useForm ({
     defaultValues : {
-      Name:"",
-      Email:"",
-      Message:""
+      user_name:"",
+      user_email:"",
+      user_message:""
   }})
+
   
- const onSubmit = data => {
+  const form = useRef();
+  
+  const onSubmit = (data) => {
   console.log(data)
+
   emailjs.sendForm('service_7u9iss8', 'template_yxie3y1', form.current, 'pdBeFRcrGLSWWeybO')
     .then((result) => {
         console.log(result.text);
@@ -26,20 +29,21 @@ const Form = () => {
 
  }
 
- useEffect(()=>{
+  useEffect(()=>{
   if(formState.isSubmitSuccessful){
     reset({
-    Name:"",
-    Email:"",
-    Message:""})
+      user_name:"",
+      user_email:"",
+      user_message:""
+  })
   }
  }, [formState, reset])
 
   return(
-    <form method='post' onSubmit={handleSubmit(onSubmit)} ref={form}>
-      <input name="Name" className="form__input" {...register("Name")} />
-      <input name="Email" className="form__input" {...register("Email")} />
-      <input name="Message" className="form__input" {...register("Message")} />
+    <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)} ref={form}>
+      <input  className="form__input" {...register("user_name")} />
+      <input  className="form__input" {...register("user_email")} />
+      <input  className="form__input" {...register("user_message")} />
       <input id="submit" className="btn form__btn-submit" type="submit" value={'send message'}/>
     </form>
   )
