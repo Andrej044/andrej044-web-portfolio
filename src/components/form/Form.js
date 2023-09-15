@@ -3,9 +3,6 @@ import { useForm} from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import './messageForm.css';
 
-
-
-
 const Form = () => {
   const {register, handleSubmit, reset, formState} = useForm ({
     defaultValues : {
@@ -41,10 +38,18 @@ const Form = () => {
 
   return(
     <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)} ref={form}>
-      <input  className="form__input" {...register("user_name")} />
-      <input  className="form__input" {...register("user_email")} />
-      <input  className="form__input" {...register("user_message")} />
-      <input id="submit" className="btn form__btn-submit" type="submit" value={'send message'}/>
+      <div className="contact-form">
+        <div className="form__input-wrapper">
+          <input  className="form__input" {...register("user_name")} />
+        </div>
+        <div className="form__input-wrapper input-email">
+          <input  className="form__input" {...register("user_email")} />
+        </div>
+        <div className="form__input-wrapper input-message">
+          <input  className="form__input" {...register("user_message")} />
+        </div>
+        <input id="submit" className="btn form__btn-submit" type="submit" value={'send message'}/>
+      </div>
     </form>
   )
 }
