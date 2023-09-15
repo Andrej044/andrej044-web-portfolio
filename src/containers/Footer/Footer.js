@@ -1,6 +1,6 @@
 import Navigation from "../Navigation/Navigation";
 import RingsSVG from "../../components/svg/ringsSVG";
-import MessageForm from "../../components/form/messageForm";
+import Form from "../../components/form/Form";
 import Section from "../Section";
 import './Footer.css';
 
@@ -14,7 +14,7 @@ const Footer = () =>{
         <span className="decor__rings decor">
           <RingsSVG/>
         </span>
-        <MessageForm/>
+        <Form/>
       </div>
       </Section>
     <Navigation section={'footer'}/>
