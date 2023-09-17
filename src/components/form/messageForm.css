@@ -79,3 +79,9 @@ span.alert + .form__input {
   margin-top: 3.2rem;
 }
 
+/*  avoid "-internal-autofill-selected" style */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: bac kground-color 0s 600000s, color 0s 600000s;
+}
+/*  */
