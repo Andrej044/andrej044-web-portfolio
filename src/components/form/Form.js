@@ -14,7 +14,8 @@ const Form = () => {
   }})
 
   const[message, setMessage] = useState('');
-  const[modalActive, setModalActive] = useState(false)
+  const[modalActive, setModalActive] = useState(false);
+  const[modalAlertActive, setModalAlertActive] = useState(true);
 
   const form = useRef();
 
@@ -24,6 +25,7 @@ const Form = () => {
   emailjs.sendForm('service_7u9iss8', 'template_yxie3y1', form.current, 'pdBeFRcrGLSWWeybO')
     .then((result) => {
       console.log(result.text);
+      setModalAlertActive(false);
       setMessage("Awesome! Your message has been sent to Andrii and he'll be so happy to hear from you! Thank you for your message!");
     }, (error) => {
         console.log(error.text);
@@ -41,9 +43,6 @@ const Form = () => {
   })
   }
  }, [formState, reset])
-
-
-
 
   return(
     <>
@@ -92,7 +91,7 @@ const Form = () => {
       </div>
     </form>
     <Modal active={modalActive} setActive={setModalActive}>
-      <p className='modal__message'>{message}</p>
+      <p className={modalAlertActive ? 'modal__message message__alert':'modal__message'}>{message}</p>
       <button className='btn modal__btn' onClick={()=>setModalActive(false)}>OK</button>
     </Modal>
     </>

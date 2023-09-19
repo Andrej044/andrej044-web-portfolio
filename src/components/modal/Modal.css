@@ -32,6 +32,9 @@
   color: var(--black);
   margin-top:0;
 }
+.modal__content .modal__message.message__alert{
+  color:var(--alert);
+}
 .modal__btn{
   color: var(--black);
 }
