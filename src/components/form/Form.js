@@ -1,30 +1,31 @@
 import {useRef, useEffect, useState} from 'react';
 import { useForm} from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import Modal from '../modal/Modal';
 import './messageForm.css';
 
 
-const PopUpWindow = (props) => {
-  const style ={
-    width: '50vw',
-    height:'15vw',
-    position:'absolute',
-    top:'0',
-    left:'0',
-    display:'flex',
-    flexDirection:'column',
-    justifyContent:'space-between',
-    transform: 'translateX(50%)',
-    backgroundColor: 'rgba(50,50,50,0.5)'
+// const PopUpWindow = (props) => {
+//   const style ={
+//     width: '50vw',
+//     height:'15vw',
+//     position:'absolute',
+//     top:'0',
+//     left:'0',
+//     display:'flex',
+//     flexDirection:'column',
+//     justifyContent:'space-between',
+//     transform: 'translateX(50%)',
+//     backgroundColor: 'rgba(50,50,50,0.5)'
+//   }
 
-  }
-  return(
-    <div style={style}>
-      <p>{props.message}</p>
-      <button style={{width: '100%', fontSize:'24px', backgroundColor:'rgba(150,150,150,0.8)', borderRadius:'5px'}} type='button'>Ok</button>
-    </div>
-  )
-}
+//   return(
+//     <div style={style}>
+//       <p>{props.message}</p>
+//       <button style={{width: '100%', fontSize:'24px', backgroundColor:'rgba(150,150,150,0.8)', borderRadius:'5px'}} type='button'>Ok</button>
+//     </div>
+//   )
+// }
 
 const Form = () => {
   const {register, handleSubmit, reset, formState} = useForm ({
@@ -37,12 +38,7 @@ const Form = () => {
   const[message, setMessage] = useState('');
 
   const form = useRef();
-  
-  const RenderMessage = (props) => {
-    return (
-      <PopUpWindow message = {props.message}/>
-    )
-  } 
+
 
   const onSubmit = (data) => {
   console.log(data)
@@ -72,7 +68,7 @@ const Form = () => {
 
   return(
     <>
-    <form id="myForm" method='post' onSubmit={handleSubmit(onSubmit)} ref={form}>
+    <form id="myForm"  onSubmit={handleSubmit(onSubmit)} ref={form}>
       <div className="contact-form">
         <div className="form__input-wrapper">
           <input  className="form__input" {...register("user_name", {
@@ -116,7 +112,7 @@ const Form = () => {
         <input id="submit" className="btn form__btn-submit" type="submit" value={'send message'}/>
       </div>
     </form>
-    <RenderMessage message = {message} />
+    {/* <PopUpWindow message = {message} /> */}
     </>
   )
 }
