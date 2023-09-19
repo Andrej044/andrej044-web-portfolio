@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,0.4);
+  transform: scale(0);
+}
+.modal.active{
+  transform: scale(1);
 }
 
 .modal__content{
