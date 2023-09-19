@@ -28,7 +28,10 @@
 .modal__content.active{
   transform: scale(1);
 }
-
+.modal__content .modal__message {
+  color: var(--black);
+  margin-top:0;
+}
 .modal__btn{
   color: var(--black);
 }
