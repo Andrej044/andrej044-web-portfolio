@@ -36,6 +36,7 @@ const Form = () => {
   }})
 
   const[message, setMessage] = useState('');
+  const[modalActive, setModalActive] = useState(true)
 
   const form = useRef();
 
@@ -113,6 +114,7 @@ const Form = () => {
       </div>
     </form>
     {/* <PopUpWindow message = {message} /> */}
+    <Modal active={modalActive} setActive={setModalActive}/>
     </>
   )
 }
