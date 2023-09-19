@@ -36,7 +36,7 @@ const Form = () => {
   }})
 
   const[message, setMessage] = useState('');
-  const[modalActive, setModalActive] = useState(true)
+  const[modalActive, setModalActive] = useState(false)
 
   const form = useRef();
 
