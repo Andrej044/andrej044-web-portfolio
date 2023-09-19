@@ -114,7 +114,7 @@ const Form = () => {
       </div>
     </form>
     {/* <PopUpWindow message = {message} /> */}
-    <Modal active={modalActive} setActive={setModalActive}/>
+    <Modal active={modalActive} setActive={setModalActive} message={message}/>
     </>
   )
 }
