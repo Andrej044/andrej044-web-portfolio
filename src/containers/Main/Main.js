@@ -32,8 +32,9 @@ const Main = () =>{
       </span>
       <SkillList/>
     </Section>
-    <Section name='projects' titleHidden={false}>
+    <Section name='projects' titleHidden={true}>
       <div className="projects__wrapper">
+        <h2 className="projects__title title">Projects</h2>
         <a className="btn projects__link" href="#contact">Contact Me</a>
       </div>
       <ProjectsList/>
