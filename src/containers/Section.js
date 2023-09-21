@@ -10,7 +10,7 @@ const childrenElements = children.map((elem, index) => {
 }) 
 return(
   <section id={id} className={name}>
-    <h2 className={`${name}__title ${titleHidden ? 'visually-hidden' : ''}`}>{titleContent}</h2>
+    <h2 className={`${name}__title title ${titleHidden ? 'visually-hidden' : ''}`}>{titleContent}</h2>
     {childrenElements}
   </section>
 )
