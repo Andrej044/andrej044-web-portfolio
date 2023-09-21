@@ -91,7 +91,7 @@ const Form = () => {
       </div>
     </form>
     <Modal active={modalActive} setActive={setModalActive}>
-      <p className={modalAlertActive ? 'modal__message message__alert':'modal__message'}>{message}</p>
+      <p className={modalAlertActive ? 'modal__message message__alert':'modal__message'}>{message.length>0 ? message : 'Fill the form first!!!!'}</p>
       <button className='btn modal__btn' onClick={()=>setModalActive(false)}>OK</button>
     </Modal>
     </>
