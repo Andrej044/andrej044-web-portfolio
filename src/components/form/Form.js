@@ -78,7 +78,7 @@ const Form = () => {
           </span>
         </div>
         <div className="form__input-wrapper input-message">
-          <input placeholder='message' className="form__input" {...register("user_message",{
+          <textarea placeholder='message' className="form__input" {...register("user_message",{
               required:"Field is required",
               minLength:{
                 value:25,
