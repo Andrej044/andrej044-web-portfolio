@@ -180,15 +180,17 @@
       align-items: flex-start;
     }
     .intro__text{
-      min-width: 445px;
+      /* min-width: 445px; */
+      width: 65%;
       max-width: 70%;
       align-items: flex-start;
       margin-top: 0;
     }
 
     .intro__text p:first-child{
-      font-size: 7.2rem;
-      line-height: 7.2rem;
+      max-width:100%;
+      font-size: 5rem;
+      line-height:5rem;
       letter-spacing: -2.05px;
       text-align: left;
     }
@@ -214,7 +216,7 @@
     .intro__img{
       position: absolute;
       top:0;
-      right: 10rem;
+      right: 0;
       max-width: 350px;
       height: 600px;
       background-size: contain;
@@ -279,6 +281,14 @@
     }
     /* end */
   /* main end */
+}
+
+
+@media screen and (min-width: 850px) {
+    .intro__text p:first-child{
+      font-size: 6.2rem;
+      line-height:6.2rem;
+    }
 }
 
 @media screen and (min-width:1440px) {
