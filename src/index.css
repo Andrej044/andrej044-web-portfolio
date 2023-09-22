@@ -57,7 +57,7 @@ input,button{
   background: none;
   border: none;
 }
-button{
+button, input[type="submit"] {
   cursor: pointer;
 }
 h2{
@@ -66,10 +66,10 @@ h2{
 h3{
   letter-spacing: -0.15rem;
 }
-a,button{
+a,button,input[type="submit"]{
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-a:hover, a:active, a:focus, button:hover, button:focus {
+a:hover, a:active, a:focus, button:hover, button:focus,input[type="submit"]:hover {
   color:var(--green)
 }
 img{
