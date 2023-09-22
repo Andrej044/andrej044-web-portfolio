@@ -30,7 +30,12 @@ html{
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
+body{
+  overflow-x: hidden;
+}
+#root{
+  overflow: hidden;
+}
 .container{
   display: flex;
   flex-direction: column;
@@ -76,6 +81,13 @@ img{
   display: block;
 }
 
+/* decor elements */
+.decor{
+  position: absolute;
+  top:0;
+  left:0;
+}
+/* decor end */
 
 /* visually hidden pattern. Hide block from users but not from screen reader*/
 .visually-hidden{

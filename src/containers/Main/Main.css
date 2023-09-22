@@ -2,7 +2,7 @@
 .main{
   flex: 1;
   width: 100%;
-  padding: 1.6rem;
+  padding:11rem 1.6rem 1.6rem;
 }
 
   /*section intro*/
@@ -72,6 +72,7 @@
   .intro .decor__circle {
     top:26.8vh;
     left:calc(100vw - 75px);
+    z-index: 99;
   }
   /* end */
 
