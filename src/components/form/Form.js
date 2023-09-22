@@ -49,7 +49,7 @@ const Form = () => {
     <form id="myForm"  onSubmit={handleSubmit(onSubmit)} ref={form}>
       <div className="contact-form">
         <div className="form__input-wrapper">
-          <input  className="form__input" {...register("user_name", {
+          <input placeholder='name'  className="form__input" {...register("user_name", {
               required:"Field is required", 
               minLength:{
                 value:5,
@@ -67,7 +67,7 @@ const Form = () => {
           </span>
         </div>
         <div className="form__input-wrapper input-email">
-          <input  className="form__input" {...register("user_email", {
+          <input placeholder='email' className="form__input" {...register("user_email", {
               required:"Field is required",
               pattern:{
                 value:/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
@@ -78,7 +78,7 @@ const Form = () => {
           </span>
         </div>
         <div className="form__input-wrapper input-message">
-          <input  className="form__input" {...register("user_message",{
+          <input placeholder='message' className="form__input" {...register("user_message",{
               required:"Field is required",
               minLength:{
                 value:25,
