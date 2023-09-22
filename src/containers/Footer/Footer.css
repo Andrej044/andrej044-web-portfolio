@@ -8,7 +8,7 @@
     padding-bottom: 8.7rem;
     border-bottom: 1px solid var(--white);
   }
-  .contact-title{
+  .contact__title{
     text-align: center;
   }
   .contact p {
@@ -40,7 +40,7 @@
       max-width: 445px;
       margin: 0 auto;
     }
-    .contact-title{
+    .contact__title{
       letter-spacing: -0.2rem;
     }
     .contact-wrapper{
