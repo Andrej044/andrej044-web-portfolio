@@ -116,3 +116,29 @@ img{
 }
 
 /* button end */
+
+/* title settings */
+.title{
+  text-transform: capitalize;
+  line-height: 4rem;
+  font-size: 4rem;
+}
+/* title end */
+
+@media screen and (min-width: 768px) {
+ /* title settings */
+ .title{
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  }
+}
+
+
+@media screen and (min-width:1440px) {
+  /* title settings */
+  .title{
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+    letter-spacing: -2.5px;
+  }
+}
