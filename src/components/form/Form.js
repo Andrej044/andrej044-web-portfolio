@@ -87,7 +87,7 @@ const Form = () => {
           <span className={formState.errors["user_message"]?.message ? "alert" : "empty"}>{formState.errors["user_message"] && (formState.errors["user_message"]?.message || 'Error!')}
           </span>
         </div>
-        <input id="submit" className="btn form__btn-submit" type="submit" value={'send message'} onClick={()=>setModalActive(true)}/>
+        <button id="submit" className="btn form__btn-submit"  value={'send message'} onClick={()=>setModalActive(true)}> send message </button>
       </div>
     </form>
     <Modal active={modalActive} setActive={setModalActive}>
