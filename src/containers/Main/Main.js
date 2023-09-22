@@ -4,14 +4,23 @@ import CircleSVG from "../../components/svg/circleSVG";
 import RingsSVG from "../../components/svg/ringsSVG";
 import SkillList from "../../components/skillsList.js";
 import ProjectsList from "../../components/projectsList";
+import ParticlesBg from "particles-bg";
 
 import './Main.css';
 
 
 const Main = () =>{
+  
   return(
   <main className="main">
     <h1 className="main-title visually-hidden">Web developer portfolio Andrii Lishchyna</h1>
+    <ParticlesBg color="ff00aa"  num={200} type="cobweb" bg={{
+      position: 'absolute',
+      left:0,
+      zIndex:1,
+      backgroundColor:'transparent',
+      opacity:0.5
+    }}/>
     <Section name='intro' titleHidden={true} >
       <span className="decor__rings decor">
         <RingsSVG/>
