@@ -73,6 +73,7 @@ h3{
 }
 a,button,input[type="submit"]{
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 90;
 }
 a:hover, a:active, a:focus, button:hover, button:focus,input[type="submit"]:hover {
   color:var(--green)
