@@ -1,12 +1,12 @@
 {
   "projects" : [
     {
-      "title":"design portfolio",
-      "src":"images/thumbnail-project-1-large.webp",
-      "techstack":["HTML","CSS","React"],
+      "title":"Face detect application",
+      "src":"data/projectImage/faceDetectApp.png",
+      "techstack":["HTML","CSS","React", "Node"],
       "id":"1",
-      "projectLink":"/some/valid/uri",
-      "projectCode":"/some/valid/uri"
+      "projectLink":"https://face-detect-app-640y.onrender.com/",
+      "projectCode":"https://github.com/Andrej044/face-detect-app"
     }
   ]
 }
