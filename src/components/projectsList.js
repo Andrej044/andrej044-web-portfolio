@@ -8,6 +8,7 @@ const ProjectsInitialState = {
     src:"source of image",
     techstack:["HTML","CSS","React"],
     id:0,
+    describe:"",
     projectLink:"/some/valid/uri",
     projectCode:"/some/valid/uri"
   }]
@@ -37,6 +38,7 @@ const ProjectsList = () => {
           <img className="projects__preview-img" src={project.src} alt={project.title} />
           <div className="projects__describe">
             <h3 className="describe__title">{project.title}</h3>
+            <p>{project.describe}</p>
             <ul className="projects__tech-list">
             {project.techstack.map((item, index) => {
               return (
