@@ -13,16 +13,24 @@
     "rate":4
   },
   {
-    "name":"Accessibility",
-    "rate":4
-  },
-  {
     "name":"React.js",
     "rate":3
   },
   {
     "name":"Node.js",
     "rate":2
+  },
+  {
+    "name":"Accessibility",
+    "rate":4
+  },
+  {
+    "name":"Time managment",
+    "rate":3
+  },
+  {
+    "name":"Problem solver",
+    "rate":4
   }
 ]
 }
