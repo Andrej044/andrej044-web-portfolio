@@ -4,6 +4,7 @@
       "title":"Face detect application",
       "src":"data/projectImage/faceDetectApp.png",
       "techstack":["HTML","CSS","React", "Node"],
+      "describe":"The app that detects faces is specifically created to recognize human faces present in photographs.",
       "id":"1",
       "projectLink":"https://face-detect-app-640y.onrender.com/",
       "projectCode":"https://github.com/Andrej044/face-detect-app"
