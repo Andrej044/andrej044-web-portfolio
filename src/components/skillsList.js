@@ -34,7 +34,7 @@
       stars.push(<li key={i}><Star/></li>)
     }
     const starList = stars.map((item,index) => {
-      return index < skill.rate ? <li key={index}><Star color ='rgb(78,225,160)'/></li> : <li key={index}><Star strokeColor="rgb(78,225,160)"/></li> 
+      return index < skill.rate ? <li key={index}><Star color ='#D95D39'/></li> : <li key={index}><Star strokeColor="rgb(241, 136, 5)"/></li> 
     })
 
    return (

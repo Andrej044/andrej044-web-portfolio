@@ -157,7 +157,7 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     text-transform: uppercase;
-    color: var(--light-gray);
+    color: var(--green);
   }
 
   .describe__links-wrapper{
@@ -388,6 +388,9 @@
       min-width: 540px;
       max-width: 540px;
     }
+    /* .projects__preview-img:hover + .projects__describe>.describe__links-wrapper {
+      display: flex;
+    } */
     .projects__item:hover .describe__links-wrapper{
       display: flex;
     }

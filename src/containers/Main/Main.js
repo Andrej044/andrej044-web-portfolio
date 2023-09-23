@@ -14,10 +14,11 @@ const Main = () =>{
   return(
   <main className="main">
     <h1 className="main-title visually-hidden">Web developer portfolio Andrii Lishchyna</h1>
-    <ParticlesBg color="ff00aa"  num={200} type="cobweb" bg={{
+    <ParticlesBg color="D95D39"  num={200} type="cobweb" bg={{
       position: 'absolute',
       left:0,
       zIndex:1,
+      height:'100vh !important',
       backgroundColor:'transparent',
       opacity:0.5
     }}/>

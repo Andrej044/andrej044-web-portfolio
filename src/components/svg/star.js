@@ -1,5 +1,5 @@
 
-const Star = ({color, strokeColor = "#1C274C"}) => {
+const Star = ({color, strokeColor = "#F18805"}) => {
 
   return (
     <svg viewBox="0 0 24 24" width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
