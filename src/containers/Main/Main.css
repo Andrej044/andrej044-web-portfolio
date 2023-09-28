@@ -71,7 +71,7 @@
   }
   .intro .decor__circle {
     top:26.8vh;
-    left:calc(100vw - 75px);
+    /* left:calc(100vw - 75px); */
     z-index: 99;
   }
   /* end */
@@ -108,7 +108,11 @@
   
   .skills .decor__rings {
     top:140.7vh;
-    left:calc(100vw - 189px);
+    overflow: hidden;
+    right: 0;
+  }
+  .skills .decor__rings > svg {
+    margin-left: 50%;
   }
 
   /* end */
@@ -246,7 +250,7 @@
     }
     .intro .decor__circle {
       top:50.5vh;
-      left:calc(100vw - 75px);
+      /* left:calc(100vw - 75px); */
     }
     /* end */
 
@@ -276,7 +280,7 @@
     }
     .skills .decor__rings {
       top:107.5vh;
-      left:calc(100vw - 198px);
+      /* left:calc(100vw - 198px); */
     }
     /* end */
 
@@ -387,7 +391,7 @@
     }
     .skills .decor__rings {
       top:115vh;
-      left:calc(100vw - 290px);
+      /* left:calc(100vw - 290px); */
     }
     /* end */
     
