@@ -35,18 +35,18 @@ const ProjectsList = () => {
   const projectsList = projects.map(project => {
     return (
         <li className="projects__item" key={project.id}>
-          <img className="projects__preview-img" src={project.src} alt={project.title} />
           <div className="projects__describe">
             <h3 className="describe__title">{project.title}</h3>
             <p>{project.describe}</p>
             <ul className="projects__tech-list">
-            {project.techstack.map((item, index) => {
-              return (
-                <li className="describe__item" key={index}>{item}</li>
-              )}
-              )}
+              {project.techstack.map((item, index) => {
+                return (
+                  <li className="describe__item" key={index}>{item}</li>
+                )}
+                )}
             </ul>
             <div className="describe__links-wrapper">
+              <img className="projects__preview-img" src={project.src} alt={project.title} />
               <ProjectsLinkComponent 
                 projectLink = {project.projectLink} 
                 projectCode = {project.projectCode} 
