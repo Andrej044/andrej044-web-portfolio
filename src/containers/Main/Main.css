@@ -70,9 +70,13 @@
     left:-342px;
   }
   .intro .decor__circle {
-    top:26.8vh;
-    /* left:calc(100vw - 75px); */
+    top:38.8vh;
+    right: 0;
     z-index: 99;
+    overflow: hidden;
+  }
+  .intro .decor__circle > svg {
+    margin-left: 50%;
   }
   /* end */
 
@@ -365,8 +369,11 @@
       left:-99px;
     }
     .intro .decor__circle {
-      top:57.8vh;
+      top:61.8vh;
       left:calc(100vw - 672.5px);
+    }
+    .intro .decor__circle > svg {
+      margin-left: 0;
     }
     /* end */
     
