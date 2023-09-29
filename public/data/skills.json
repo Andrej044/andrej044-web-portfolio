@@ -21,6 +21,22 @@
     "rate":2
   },
   {
+    "name":"SQL",
+    "rate":2
+  },
+  {
+    "name":"PostgreSQL",
+    "rate":2
+  },
+  {
+    "name":"GraphQL",
+    "rate":3
+  },
+  {
+    "name":"API's",
+    "rate":3
+  },
+  {
     "name":"Accessibility",
     "rate":4
   },
