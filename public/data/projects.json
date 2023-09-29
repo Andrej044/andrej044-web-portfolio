@@ -8,6 +8,15 @@
       "id":"1",
       "projectLink":"https://face-detect-app-640y.onrender.com/",
       "projectCode":"https://github.com/Andrej044/face-detect-app"
+    },
+    {
+      "title":"Robofriends",
+      "src":"data/projectImage/robofriends.gif",
+      "techstack":["HTML","CSS","React", "Redux","Tachyons", "Robohash API"],
+      "describe":"React-based application has been developed to filter out robots created using the Robohash API.",
+      "id":"2",
+      "projectLink":"https://andrej044.github.io/RoboFriends-React--ZTM-project/",
+      "projectCode":"https://github.com/Andrej044/RoboFriends-React--ZTM-project"
     }
   ]
 }
