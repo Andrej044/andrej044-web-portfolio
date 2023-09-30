@@ -44,6 +44,15 @@
       "id":"5",
       "projectLink":"https://andrej044.github.io/FirstPage/",
       "projectCode":"https://github.com/Andrej044/FirstPage"
+    },
+    {
+      "title":"Personal portfolio webpage-FreeCodeCamp certification project",
+      "src":"data/projectImage/personal_portfolio_webpage-FreeCodeCamp.gif",
+      "techstack":["HTML","CSS","Responsive"],
+      "describe":"As part of my learning journey on the FreeCodeCamp platform, I undertook a final certification project, which I successfully completed.",
+      "id":"6",
+      "projectLink":"https://andrej044.github.io/Personal_portfolio_webpage/",
+      "projectCode":"https://github.com/Andrej044/Personal_portfolio_webpage"
     }
 
   ]
