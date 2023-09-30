@@ -53,6 +53,15 @@
       "id":"6",
       "projectLink":"https://andrej044.github.io/Personal_portfolio_webpage/",
       "projectCode":"https://github.com/Andrej044/Personal_portfolio_webpage"
+    },
+    {
+      "title":"Subscribe button for Jupiter Broadcasting",
+      "src":"data/projectImage/coder_radio.png",
+      "techstack":["HTML","CSS","Sass","JavaScript","Docker"],
+      "describe":"Working with a great team and gaining valuable experience was a fantastic opportunity for me, even though some may view it as just a button.",
+      "id":"7",
+      "projectLink":"https://new.jupiterbroadcasting.com/",
+      "projectCode":"https://github.com/Andrej044/jupiterbroadcasting.com"
     }
 
   ]
