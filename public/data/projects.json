@@ -26,6 +26,16 @@
       "id":"3",
       "projectLink":"https://andrej044.github.io/sp-developer-portfolio/",
       "projectCode":"https://github.com/Andrej044/sp-developer-portfolio"
+    },
+    {
+      "title":"background_generator",
+      "src":"data/projectImage/background_generator.png",
+      "techstack":["HTML","CSS","JavaScript"],
+      "describe":"Background gradient generator - allow create linear gradient or random generate for background color value.",
+      "id":"4",
+      "projectLink":"https://andrej044.github.io/Background_Generator--ZTM-project/",
+      "projectCode":"https://github.com/Andrej044/Background_Generator--ZTM-project"
     }
+
   ]
 }
