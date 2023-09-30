@@ -17,6 +17,15 @@
       "id":"2",
       "projectLink":"https://andrej044.github.io/RoboFriends-React--ZTM-project/",
       "projectCode":"https://github.com/Andrej044/RoboFriends-React--ZTM-project"
+    },
+    {
+      "title":"sp-developer-portfolio",
+      "src":"data/projectImage/sp-developer-portfolio.gif",
+      "techstack":["HTML","CSS","Responsive"],
+      "describe":"Creating a single-page web portfolio is a great way to showcase my skills as a frontend developer",
+      "id":"3",
+      "projectLink":"https://andrej044.github.io/sp-developer-portfolio/",
+      "projectCode":"https://github.com/Andrej044/sp-developer-portfolio"
     }
   ]
 }
