@@ -3,7 +3,7 @@
     {
       "title":"Face detect application",
       "src":"data/projectImage/faceDetectApp.png",
-      "techstack":["HTML","CSS","React", "Node"],
+      "techstack":["HTML","CSS","React", "Node", "Clarifai API"],
       "describe":"The app that detects faces is specifically created to recognize human faces present in photographs.",
       "id":"1",
       "projectLink":"https://face-detect-app-640y.onrender.com/",
@@ -35,6 +35,15 @@
       "id":"4",
       "projectLink":"https://andrej044.github.io/Background_Generator--ZTM-project/",
       "projectCode":"https://github.com/Andrej044/Background_Generator--ZTM-project"
+    },
+    {
+      "title":"website business card",
+      "src":"data/projectImage/website_business_card.png",
+      "techstack":["HTML","CSS","JavaScript"],
+      "describe":"As a way of practicing and experimenting with different visual effects, I created a website business card project.",
+      "id":"5",
+      "projectLink":"https://andrej044.github.io/FirstPage/",
+      "projectCode":"https://github.com/Andrej044/FirstPage"
     }
 
   ]
