@@ -21,6 +21,14 @@
     "rate":2
   },
   {
+    "name":"GIT",
+    "rate":3
+  },
+  {
+    "name":"GITHUB",
+    "rate":3
+  },
+  {
     "name":"SQL",
     "rate":2
   },
