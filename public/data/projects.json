@@ -22,7 +22,7 @@
       "title":"sp-developer-portfolio",
       "src":"data/projectImage/sp-developer-portfolio.gif",
       "techstack":["HTML","CSS","Responsive"],
-      "describe":"Creating a single-page web portfolio is a great way to showcase my skills as a frontend developer",
+      "describe":"Creating a single-page web portfolio is a great way to showcase my skills as a frontend developer. Designed by frontendmentor.io",
       "id":"3",
       "projectLink":"https://andrej044.github.io/sp-developer-portfolio/",
       "projectCode":"https://github.com/Andrej044/sp-developer-portfolio"
