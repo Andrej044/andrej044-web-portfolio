@@ -62,6 +62,15 @@
       "id":"7",
       "projectLink":"https://new.jupiterbroadcasting.com/",
       "projectCode":"https://github.com/Andrej044/jupiterbroadcasting.com"
+    },
+    {
+      "title":"Bouncy",
+      "src":"data/projectImage/bouncy.gif",
+      "techstack":["HTML","CSS","JavaScript"],
+      "describe":"This webpage is a practice project for improving web development skills in HTML, CSS, and JS. It is not meant to be a functional website but a project for my education.",
+      "id":"8",
+      "projectLink":"https://andrej044.github.io/BOUNCY/",
+      "projectCode":"https://github.com/Andrej044/BOUNCY"
     }
 
   ]
