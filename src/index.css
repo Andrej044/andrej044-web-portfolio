@@ -71,6 +71,9 @@ h2{
 h3{
   letter-spacing: -0.15rem;
 }
+a{
+  color:var(--white)
+}
 a,button,input[type="submit"]{
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   z-index: 90;
