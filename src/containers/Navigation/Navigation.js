@@ -10,17 +10,17 @@ const Navigation = ({section}) => {
       <p>andrej044</p>
       <ul className="nav__list">
         <li>
-          <a className="nav__link" href="/some/valid/uri">
+          <a className="nav__link" href="https://github.com/Andrej044" rel='noreferrer' target="_blank">
               <GitHub/>
           </a>
         </li>
         <li>
-          <a className="nav__link" href="/some/valid/uri">
+          <a className="nav__link" href="https://www.frontendmentor.io/profile/Andrej044" rel='noreferrer' target="_blank">
               <FrontEndMentor/>
           </a>
         </li>
         <li>
-          <a className="nav__link" href="/some/valid/uri">
+          <a className="nav__link" href="https://www.linkedin.com/in/andrii-lishchyna-951401247/" rel='noreferrer' target="_blank">
               <LinkedIn/>
           </a>
         </li>
