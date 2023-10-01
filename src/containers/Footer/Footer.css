@@ -77,7 +77,6 @@
     justify-self: start;
   }  
   .contact p{
-    max-width: 445px;
     grid-row: 2/4;
     order: 2;
     margin-top: 3.6rem;
