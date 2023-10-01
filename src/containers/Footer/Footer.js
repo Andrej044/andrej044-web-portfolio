@@ -8,7 +8,7 @@ const Footer = () =>{
   return(
   <footer className="footer">
     <Section id='contact' name='contact' titleHidden={false}>      
-      <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+      <p>If you ever have any suggestions or advice that you would like to share with me, or if you have a project in mind that you think we could work on together, please don't hesitate to reach out.<br/>No matter what language you speak - English, Ukrainian, Polish or Russian - I'm all ears! <br/>I will make every effort to respond to you as quickly as possible.
       </p>
       <div className="contact-wrapper">
         <span className="decor__rings decor">
