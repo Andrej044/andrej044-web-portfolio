@@ -18,6 +18,10 @@ const Footer = () =>{
       </div>
       </Section>
     <Navigation section={'footer'}/>
+    <div>
+      <p>&copy; Copyright 2023 Andrii Lishchyna</p>
+      <p>Design based on <a href="https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x" rel='noreferrer' target="_blank" >Frontend mentor challenge</a></p>
+    </div>
   </footer>
   )
 }
