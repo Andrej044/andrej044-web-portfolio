@@ -18,7 +18,6 @@ const Main = () =>{
   useEffect(()=>{
     function handleResize(){
       const dimensionDependenceNumber = (height/width) > 1 ? (height+width)/100 : (height+width)/10;
-      console.log(dimensionDependenceNumber)
       setParticleNumber((height+width)/dimensionDependenceNumber);
     }
     window.addEventListener('resize', handleResize);
