@@ -5,16 +5,28 @@ import RingsSVG from "../../components/svg/ringsSVG";
 import SkillList from "../../components/skillsList.js";
 import ProjectsList from "../../components/projectsList";
 import ParticlesBg from "particles-bg";
+import useWindowDimensions from "../../components/windowDimensions";
+import { useEffect, useState } from "react";
 
 import './Main.css';
 
 
 const Main = () =>{
+  const { height, width } = useWindowDimensions();
+  const [praticleNumber, setParticleNumber] = useState((height/width) > 1 ? (height+width)/50 : (height+width)/10);
   
+  useEffect(()=>{
+    function handleResize(){
+      const dimensionDependenceNumber = (height/width) > 1 ? (height+width)/100 : (height+width)/10;
+      console.log(dimensionDependenceNumber)
+      setParticleNumber((height+width)/dimensionDependenceNumber);
+    }
+    window.addEventListener('resize', handleResize);
+  }, [height, width,praticleNumber ])
   return(
   <main className="main">
     <h1 className="main-title visually-hidden">Web developer portfolio Andrii Lishchyna</h1>
-    <ParticlesBg color="D95D39"  num={200} type="cobweb" bg={{
+    <ParticlesBg color="D95D39"  num={praticleNumber} type="cobweb" bg={{
       position: 'absolute',
       left:0,
       zIndex:1,
