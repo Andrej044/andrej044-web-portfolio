@@ -173,7 +173,7 @@
   .project__image >img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .project__bottom{
     display: flex;
@@ -451,12 +451,14 @@
       justify-self: flex-end;
     }
     .project__links-wrapper{
+      position: absolute;
+      top:0;
+      left:0;
+      height: 250px;
       display: flex;
       align-items: center;
       justify-content:  center;
-      bottom: 0;
-      border: 1px solid white;
-      opacity:1;
+      opacity:0;
       background-color: rgba(0,0,0,0.75);
     }
     .project__links-wrapper:hover{
