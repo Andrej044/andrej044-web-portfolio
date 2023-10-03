@@ -39,10 +39,6 @@ const ProjectsList = () => {
               <div className="project__image">
                 <img src={project.src} alt={project.title} />
               </div>
-              {/* <ProjectsLinkComponent 
-                projectLink = {project.projectLink} 
-                projectCode = {project.projectCode} 
-              />   */}
             </div>
             <div className="project__bottom">
               <p className="project__title">{project.title}</p>
