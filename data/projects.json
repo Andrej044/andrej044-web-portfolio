@@ -1,0 +1,77 @@
+{
+  "projects" : [
+    {
+      "title":"Face detect application",
+      "src":"data/projectImage/faceDetectApp.png",
+      "techstack":["HTML","CSS","React", "Node", "Clarifai API"],
+      "describe":"The app that detects faces is specifically created to recognize human faces present in photographs.",
+      "id":"1",
+      "projectLink":"https://face-detect-app-640y.onrender.com/",
+      "projectCode":"https://github.com/Andrej044/face-detect-app"
+    },
+    {
+      "title":"Subscribe button for Jupiter Broadcasting",
+      "src":"data/projectImage/coder_radio.png",
+      "techstack":["HTML","CSS","Sass","JavaScript","Docker"],
+      "describe":"Working with a great team and gaining valuable experience was a fantastic opportunity for me, even though some may view it as just a button.",
+      "id":"7",
+      "projectLink":"https://new.jupiterbroadcasting.com/",
+      "projectCode":"https://github.com/Andrej044/jupiterbroadcasting.com"
+    },
+    {
+      "title":"sp-developer-portfolio",
+      "src":"data/projectImage/sp-developer-portfolio.gif",
+      "techstack":["HTML","CSS","Responsive"],
+      "describe":"Creating a single-page web portfolio is a great way to showcase my skills as a frontend developer. Designed by frontendmentor.io",
+      "id":"3",
+      "projectLink":"https://andrej044.github.io/sp-developer-portfolio/",
+      "projectCode":"https://github.com/Andrej044/sp-developer-portfolio"
+    },
+    {
+      "title":"Robofriends",
+      "src":"data/projectImage/robofriends.gif",
+      "techstack":["HTML","CSS","React", "Redux","Tachyons", "Robohash API"],
+      "describe":"React-based application has been developed to filter out robots created using the Robohash API.",
+      "id":"2",
+      "projectLink":"https://andrej044.github.io/RoboFriends-React--ZTM-project/",
+      "projectCode":"https://github.com/Andrej044/RoboFriends-React--ZTM-project"
+    },
+    {
+      "title":"background_generator",
+      "src":"data/projectImage/background_generator.png",
+      "techstack":["HTML","CSS","JavaScript"],
+      "describe":"Background gradient generator - allow create linear gradient or random generate for background color value.",
+      "id":"4",
+      "projectLink":"https://andrej044.github.io/Background_Generator--ZTM-project/",
+      "projectCode":"https://github.com/Andrej044/Background_Generator--ZTM-project"
+    },
+    {
+      "title":"website business card",
+      "src":"data/projectImage/website_business_card.png",
+      "techstack":["HTML","CSS","JavaScript"],
+      "describe":"As a way of practicing and experimenting with different visual effects, I created a website business card project.",
+      "id":"5",
+      "projectLink":"https://andrej044.github.io/FirstPage/",
+      "projectCode":"https://github.com/Andrej044/FirstPage"
+    },
+    {
+      "title":"Personal portfolio webpage-FreeCodeCamp certification project",
+      "src":"data/projectImage/personal_portfolio_webpage-FreeCodeCamp.gif",
+      "techstack":["HTML","CSS","Responsive"],
+      "describe":"As part of my learning journey on the FreeCodeCamp platform, I undertook a final certification project, which I successfully completed.",
+      "id":"6",
+      "projectLink":"https://andrej044.github.io/Personal_portfolio_webpage/",
+      "projectCode":"https://github.com/Andrej044/Personal_portfolio_webpage"
+    },
+    {
+      "title":"Bouncy",
+      "src":"data/projectImage/bouncy.gif",
+      "techstack":["HTML","CSS","JavaScript"],
+      "describe":"This webpage is a practice project for improving web development skills in HTML, CSS, and JS. It is not meant to be a functional website but a project for my education.",
+      "id":"8",
+      "projectLink":"https://andrej044.github.io/BOUNCY/",
+      "projectCode":"https://github.com/Andrej044/BOUNCY"
+    }
+
+  ]
+}

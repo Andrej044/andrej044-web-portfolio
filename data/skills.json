@@ -1,0 +1,64 @@
+{
+"skills" :[
+  {
+    "name":"HTML",
+    "rate":4
+  },
+  {
+    "name":"CSS",
+    "rate":4
+  },
+  {
+    "name":"JavaScript",
+    "rate":4
+  },
+  {
+    "name":"React.js",
+    "rate":3
+  },
+  {
+    "name":"Node.js",
+    "rate":2
+  },
+  {
+    "name":"GIT",
+    "rate":3
+  },
+  {
+    "name":"GITHUB",
+    "rate":3
+  },
+  {
+    "name":"SQL",
+    "rate":2
+  },
+  {
+    "name":"PostgreSQL",
+    "rate":2
+  },
+  {
+    "name":"GraphQL",
+    "rate":3
+  },
+  {
+    "name":"API's",
+    "rate":3
+  },
+  {
+    "name":"Accessibility",
+    "rate":4
+  },
+  {
+    "name":"Time managment",
+    "rate":3
+  },
+  {
+    "name":"Problem solving",
+    "rate":4
+  },
+  {
+    "name":"Team player",
+    "rate":5
+  }
+]
+}

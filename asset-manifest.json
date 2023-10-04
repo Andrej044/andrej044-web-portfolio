@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/andrej044-web-portfolio/static/css/main.2210e0e4.css",
+    "main.js": "/andrej044-web-portfolio/static/js/main.ef04b989.js",
+    "static/js/787.f98d879c.chunk.js": "/andrej044-web-portfolio/static/js/787.f98d879c.chunk.js",
+    "static/media/profilePhoto.jpg": "/andrej044-web-portfolio/static/media/profilePhoto.62b44eba7c2310417305.jpg",
+    "static/media/SpaceGrotesk-Medium.ttf": "/andrej044-web-portfolio/static/media/SpaceGrotesk-Medium.dff8d806ce24db6ac483.ttf",
+    "static/media/SpaceGrotesk-Bold.ttf": "/andrej044-web-portfolio/static/media/SpaceGrotesk-Bold.96e001703fcc4898de0e.ttf",
+    "index.html": "/andrej044-web-portfolio/index.html",
+    "static/media/alert.svg": "/andrej044-web-portfolio/static/media/alert.bd27d1fd724c589b9d4b.svg",
+    "main.2210e0e4.css.map": "/andrej044-web-portfolio/static/css/main.2210e0e4.css.map",
+    "main.ef04b989.js.map": "/andrej044-web-portfolio/static/js/main.ef04b989.js.map",
+    "787.f98d879c.chunk.js.map": "/andrej044-web-portfolio/static/js/787.f98d879c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2210e0e4.css",
+    "static/js/main.ef04b989.js"
+  ]
+}
