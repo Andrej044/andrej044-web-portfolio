@@ -39,7 +39,7 @@ const Main = () =>{
       </span>
       <div className="intro__text">
         <p>Nice to <br className="intro__text--br-hidden"/> meet you! I'm <span className="text--underline">Andrii Lishchyna</span>.</p>
-        <p>As a front-end developer and troubleshooter, I possess the skills and expertise to develop user-friendly interfaces and diagnose and resolve technical issues efficiently.</p>
+        <p>As a front-end developer and troubleshooter, I possess the skills and expertise to develop user-friendly interfaces and diagnose and resolve technical issues efficiently. Based in Toronto, Canada</p>
         <a className="btn intro__link" href="#contact">Contact Me</a>
       </div>
       <ProfilePhoto name='intro'/>
